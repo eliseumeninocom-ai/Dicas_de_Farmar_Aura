@@ -1,0 +1,212 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    width:100%;
+    background:#1b1b1b;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 0 15px #00aeff55;
+}
+
+header h1{
+    color:#00b7ff;
+    text-shadow:0 0 10px #00b7ff;
+    font-size:32px;
+}
+
+.menuBtn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:12px;
+    background:#009dff;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.menuBtn:hover{
+    transform:scale(1.08);
+}
+
+main{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.card{
+    background:#1e1e1e;
+    border-radius:20px;
+    margin-top:25px;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,170,255,.25);
+}
+
+#aura{
+    font-size:48px;
+    color:#00d0ff;
+    font-weight:bold;
+}
+
+#rank{
+    margin-top:10px;
+    font-size:24px;
+}
+
+#farmButton{
+    margin-top:30px;
+    width:300px;
+    height:90px;
+    border:none;
+    border-radius:18px;
+    background:#0094ff;
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.15s;
+    box-shadow:0 0 25px #0094ff;
+}
+
+#farmButton:hover{
+    transform:scale(1.05);
+}
+
+#farmButton:active{
+    transform:scale(.95);
+}
+
+.lojaBtn{
+    margin-top:20px;
+    width:200px;
+    height:60px;
+    background:#222;
+    color:white;
+    border:2px solid #00aaff;
+    border-radius:15px;
+    font-size:22px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.lojaBtn:hover{
+    background:#00aaff;
+}
+
+#mensagem{
+    margin-top:30px;
+    background:#1b1b1b;
+    padding:20px;
+    border-radius:15px;
+    border-left:6px solid #00aaff;
+    font-size:20px;
+    font-style:italic;
+}
+
+#menu{
+    position:fixed;
+    top:0;
+    right:-350px;
+    width:320px;
+    height:100%;
+    background:#181818;
+    transition:.3s;
+    box-shadow:-5px 0 20px rgba(0,0,0,.5);
+    padding:20px;
+}
+
+#menu.ativo{
+    right:0;
+}
+
+#fechar{
+    float:right;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:12px;
+    background:red;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.opcao{
+    margin-top:25px;
+    background:#242424;
+    padding:18px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.opcao:hover{
+    background:#00aaff;
+}
+
+.upgrade{
+    margin-top:15px;
+    background:#232323;
+    border-radius:15px;
+    padding:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.comprar{
+    background:#00aaff;
+    border:none;
+    color:white;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    color:#888;
+    text-align:center;
+}
+
+@media(max-width:700px){
+
+header h1{
+    font-size:22px;
+}
+
+#farmButton{
+    width:90%;
+    font-size:28px;
+}
+
+#aura{
+    font-size:38px;
+}
+
+#rank{
+    font-size:20px;
+}
+
+#menu{
+    width:100%;
+}
+
+}
