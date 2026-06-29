@@ -1,46 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dicas para ganhar aura</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
+<meta charset="UTF-8">
 
-    body{
-      background:#111;
-      color:white;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      text-align:center;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    h1{
-      font-size:64px;
-      text-shadow:0 0 20px cyan;
-    }
+<title>Dicas para Farmar Aura</title>
 
-    p{
-      margin-top:25px;
-      color:#bbb;
-      font-size:24px;
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<div>
-  <h1>Renegue seus instintos<br>e Farme aura</h1>
-  <p>Elias Menino</p>
+<header>
+
+<h1>DICAS PARA FARMAR AURA</h1>
+
+<button class="menuBtn" id="abrirMenu">☰</button>
+
+</header>
+
+<div id="menu">
+
+<button id="fechar">✖</button>
+
+<h2>MENU</h2>
+
+<div class="opcao">🏠 Início</div>
+
+<div class="opcao">🛒 Loja</div>
+
+<div class="opcao">🏆 Conquistas</div>
+
+<div class="opcao">📊 Estatísticas</div>
+
+<div class="opcao">⚙️ Configurações</div>
+
 </div>
 
+<main>
+
+<div class="card">
+
+<h2>Sua Aura</h2>
+
+<div id="aura">0</div>
+
+<h3>Rank</h3>
+
+<div id="rank">Sem aura alguma</div>
+
+<button id="farmButton">
+
+🔥 FARMAR AURA 🔥
+
+</button>
+
+<button class="lojaBtn">
+
+🛒 Abrir Loja
+
+</button>
+
+</div>
+<div class="card">
+
+<h2>💬 Mensagem do Mundo</h2>
+
+<div id="mensagem">
+
+"Por que você faz isso?" — Seu vizinho
+
+</div>
+
+</div>
+
+<div class="card" id="loja">
+
+<h2>🛒 LOJA DE AUROL</h2>
+
+<div class="upgrade">
+
+<div>
+
+<h3>💧 Gota de Aurol</h3>
+
+<p>+1 Aura por clique</p>
+
+<p>Preço: 100 Aura</p>
+
+</div>
+
+<button class="comprar">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="upgrade">
+
+<div>
+
+<h3>🥤 Copo de Aurol</h3>
+
+<p>+5 Aura por clique</p>
+
+<p>Preço: 500 Aura</p>
+
+</div>
+
+<button class="comprar">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="upgrade">
+
+<div>
+
+<h3>🍾 Garrafa de Aurol</h3>
+
+<p>+10 Aura por clique</p>
+
+<p>Preço: 2.000 Aura</p>
+
+</div>
+
+<button class="comprar">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="upgrade">
+
+<div>
+
+<h3>🛢️ Galão de Aurol</h3>
+
+<p>+25 Aura por clique</p>
+
+<p>Preço: 10.000 Aura</p>
+
+</div>
+
+<button class="comprar">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="upgrade">
+
+<div>
+
+<h3>🚰 Caixa-d'água de Aurol</h3>
+
+<p>+100 Aura por clique</p>
+
+<p>Preço: 100.000 Aura</p>
+
+</div>
+
+<button class="comprar">
+
+Comprar
+
+</button>
+
+</div>
+
+</div>
+<div class="card">
+
+<h2>📅 Frase do Dia</h2>
+
+<p id="fraseDia">
+
+"Renegue seus instintos e farme aura."
+
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>Elias Menino © 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+const menu = document.getElementById("menu");
+
+document.getElementById("abrirMenu").onclick = () => {
+
+    menu.classList.add("ativo");
+
+}
+
+document.getElementById("fechar").onclick = () => {
+
+    menu.classList.remove("ativo");
+
+}
+
+</script>
+
 </body>
+
 </html>
